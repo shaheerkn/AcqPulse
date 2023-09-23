@@ -56,7 +56,7 @@ const CustomizedSearch = () => {
   
           <div className="flex flex-col items-center justify-start">
             <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
-              <Image src="/assets/Govinfo.png" width="118" height="41" alt="Img" />
+              <Image src="/assets/GovInfo.png" width="118" height="41" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">Code of Federal Regulations</h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
