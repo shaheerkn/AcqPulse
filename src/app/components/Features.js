@@ -24,11 +24,11 @@ const primaryFeatures = [
 
 const Features = () => {
   return (
-    <section className='bg-[#F9FAFB] py-24'>
-      <dl className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3 max-w-[1230px] px-6 mx-auto">
+    <section className='bg-[#F9FAFB] py-12 lg:py-24 font-poppins'>
+      <dl className="grid grid-cols-1 gap-x-8 gap-y-10 lg:gap-y-16 lg:grid-cols-3 max-w-[1230px] px-6 mx-auto">
         {primaryFeatures.map((feature) => (
           <div key={feature.name} className="flex flex-col items-center">
-            <dt className="text-base font-semibold leading-7 text-[#101828] flex flex-col items-center gap-5 text-xl">
+            <dt className="font-semibold leading-7 text-[#101828] flex flex-col items-center gap-5 text-xl">
               <div className="flex items-center justify-center shadow-md border-2 border-[#EAECF0] bg-white rounded-xl p-3">
                 <feature.icon className="h-6 w-6 text-black " aria-hidden="true" />
               </div>

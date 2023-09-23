@@ -28,7 +28,7 @@ const Footer = () => {
               Reach out for a demo or sign up to experience the differentiated offerings that come with our multi-tiered packages.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a href='#' className='flex items-center gap-2 text-lg bg-white text-black px-5 py-[14px] rounded-lg font-semibold'> 
+              <a href='#' className='flex items-center gap-2 text-lg bg-white text-black px-5 py-[14px] rounded-lg font-semibold transition-transform hover:-translate-y-2'> 
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="mx-auto max-w-[1216px] pt-8 pb pb-32 md:flex md:items-center md:justify-between border-t-2 border-[#667085]">
           <div className="flex justify-center space-x-6 md:order-2">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className=" text-[#667085] hover:text-gray-500">
+              <a key={item.name} href={item.href} className=" text-[#667085] hover:text-gray-100">
                 <span className="sr-only">{item.name}</span>
                 {item.name}
               </a>

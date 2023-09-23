@@ -30,8 +30,8 @@ const features = [
 
 const FeaturesWithLottie = () => {
   return (
-    <section className='py-28'>
-      <div className='text-center max-w-3xl mx-auto'>
+    <section className='py-12 lg:py-28 font-poppins' id='features'>
+      <div className='text-center max-w-3xl mx-auto px-6 sm:px-0'>
        <h5 className='text-secondary text-base font-semibold'>Features</h5>
        <h2 className='text-4xl font-semibold mt-3'>Overflowing with useful features</h2>
        <p className='text-xl font-normal text-[#475467] mt-5'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
@@ -48,7 +48,7 @@ const FeaturesWithLottie = () => {
                 <div className='bg-[#F4EBFF] border-4 xl:border-8 border-[#F9F5FF] text-base text-secondary flex items-center justify-center rounded-[50%] w-8 h-8 xl:w-14 xl:h-14'>
                   <p className='leading-0'>{ feature.id }</p>
                 </div>
-                <div className='max-w max-w-xs sm:max-w-lg'>
+                <div className=' max-w-[300px] sm:max-w-lg'>
                   <h5 className='text-base font-semibold text-[#101828] mt-2'>{ feature.title }</h5>
 
                   <div className='text-[#475467] font-normal font-poppins mt-2'>
@@ -59,8 +59,8 @@ const FeaturesWithLottie = () => {
                     )}
                   </div>
 
-                  <a href={feature.featureURl} className='text-secondary font-semibold mt-5 inline-block flex gap-1'>Learn more 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" /></svg>
+                  <a href={feature.featureURl} className='text-secondary font-semibold mt-5 inline-block flex gap-1 group'>Learn more 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 group-hover:translate-x-3 transition-transform"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" /></svg>
                   </a>
                 </div>
               </div>

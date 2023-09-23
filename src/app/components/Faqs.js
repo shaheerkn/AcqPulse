@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 
 import React from "react";
 import { Disclosure, Transition } from '@headlessui/react'
@@ -51,23 +51,23 @@ const faqs = [
 
 export default function Faqs() {
   return (
-    <section className="bg-primary font-poppins py-24 sm:py-32 lg:py-24">
+    <section className="bg-primary font-poppins py-12 sm:py-32 lg:py-24" id="faqs">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
         <div className="mx-auto max-w-4xl divide-y divide-white/10">
-          <div className='text-white text-center'>
-            <h2 className="text-4xl font-bold leading-10 tracking-tigh">Frequently asked questions</h2>
-            <p className='text-xl font-normal mt-5'>Everything you need to know about the product and billing.</p>
+          <div className="text-white text-center">
+            <h2 className="text-2xl sm:text-4xl font-bold leading-10 tracking-tigh">Frequently asked questions</h2>
+            <p className='text-base sm:text-xl font-normal mt-3 sm:mt-5'>Everything you need to know about the product and billing.</p>
           </div>
 
-          <dl className="mt-10 space-y-6 divide-y divide-white/10">
+          <dl className="mt-16 space-y-6 divide-y divide-white/10">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
                   <>
                     <dt>
                       <Disclosure.Button className="flex w-full items-start justify-between text-left text-white">
-                        <span className="text-lg font-medium leading-7">{faq.question}</span>
-                        <span className="ml-6 flex h-7 items-center">
+                        <span className="text-sm sm:text-lg font-medium sm:leading-7">{faq.question}</span>
+                        <span className="ml-3 sm:ml-6 flex h-7 items-center">
                           {open ? (
                             <MinusSmallIcon className="h-6 w-6 border-[1px] border-gray-400 rounded-full text-gray-400" aria-hidden="true" />
                           ) : (
@@ -76,18 +76,21 @@ export default function Faqs() {
                         </span>
                       </Disclosure.Button>
                     </dt>
+
                     <Transition
-                      enter="transition duration-100 ease-out"
-                      enterFrom="transform scale-95 opacity-0"
-                      enterTo="transform scale-100 opacity-100"
-                      leave="transition duration-75 ease-out"
-                      leaveFrom="transform scale-100 opacity-100"
-                      leaveTo="transform scale-95 opacity-0"
+                      show={open}
+                      enter="transition-opacity duration-300 ease-in"
+                      enterFrom="opacity-0"
+                      enterTo="opacity-100"
+                      leave="transition-opacity duration-300 ease-out"
+                      leaveFrom="opacity-100"
+                      leaveTo="opacity-0"
                     >
-                      <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                        {/* <p className="text-base leading-7 text-gray-300">{faq.answer}</p> */}
-                        <p className="text-base leading-7 text-gray-300" dangerouslySetInnerHTML={{ __html: faq.answer }} />
-                      </Disclosure.Panel>
+                      {(ref) => (
+                        <dd ref={ref} className="mt-2 pr-12">
+                          <p className="text-xs leading-4 sm:text-base sm:leading-7 text-gray-300" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                        </dd>
+                      )}
                     </Transition>
                   </>
                 )}
@@ -96,11 +99,11 @@ export default function Faqs() {
           </dl>
         </div>
 
-        <div className='bg-[#219EBC] text-white p-8 flex flex-col items-center justify-center rounded-2xl mt-16'>
-          <Image src="/assets/avatar.png" width="100" height="36" />
-          <h4 className='text-xl font-semibold mt-8'>Still have questions?</h4>
-          <p className="mt-2">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
-          <a href="#" className="bg-primary text-white py-3 px-5 mt-8 font-semibold rounded-lg">Get in touch</a>
+        <div className="bg-[#219EBC] text-white p-8 flex flex-col items-center justify-center rounded-2xl mt-16">
+          <Image src="/assets/avatar.png" width="100" height="36" alt="avatar" />
+          <h4 className="text-xl font-semibold mt-8">Still have questions?</h4>
+          <p className="mt-2 text-center">Can’t find the answer you’re looking for? Please chat to our friendly team.</p>
+          <a href="#" className="bg-primary text-white py-3 px-5 mt-8 font-semibold rounded-lg transition-all hover:bg-white hover:text-secondary">Get in touch</a>
         </div>
       </div>
     </section>

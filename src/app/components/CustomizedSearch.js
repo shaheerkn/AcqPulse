@@ -4,12 +4,9 @@ import React from "react";
 const CustomizedSearch = () => {
   return (
     <section>
-      <div className="py-24 sm:py-32">
+      <div className="py-12 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            {/* <h2 className="text-base font-semibold leading-7 text-indigo-600">
-              Pricing
-            </h2> */}
             <span className="bg-slate-100 text-[#219EBC] text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-2xl border border-slate-200">
               Integrations
             </span>
@@ -22,10 +19,10 @@ const CustomizedSearch = () => {
             search for a curated epxerience:
           </p>
         </div>
-        <div className="space-y-8 mx-auto max-w-7xl my-16 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div className="space-y-12 mx-auto px-6 sm:px-0 max-w-7xl my-16 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div className="flex flex-col items-center justify-start">
-            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full h-[45px]">
-              <Image src="/assets/ACQ.png" width="268" height="36" />
+            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
+              <Image src="/assets/ACQ.png" width="268" height="36" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">Acquisition.gov</h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
@@ -36,8 +33,8 @@ const CustomizedSearch = () => {
           </div>
 
           <div className="flex flex-col items-center justify-start">
-            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full h-[45px]">
-              <Image src="/assets/DAU.png" width="117" height="30" />
+            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
+              <Image src="/assets/DAU.png" width="117" height="30" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">DAU.edu</h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
@@ -46,8 +43,8 @@ const CustomizedSearch = () => {
           </div>
 
           <div className="flex flex-col items-center justify-start">
-            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full h-[45px]">
-              <Image src="/assets/GAO.png" width="145" height="48" />
+            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
+              <Image src="/assets/GAO.png" width="145" height="48" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">
               GAO.Gov
@@ -58,8 +55,8 @@ const CustomizedSearch = () => {
           </div>
   
           <div className="flex flex-col items-center justify-start">
-            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full h-[45px]">
-              <Image src="/assets/Govinfo.png" width="118" height="41" />
+            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
+              <Image src="/assets/Govinfo.png" width="118" height="41" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">Code of Federal Regulations</h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
@@ -68,8 +65,8 @@ const CustomizedSearch = () => {
           </div>
   
           <div className="flex flex-col items-center justify-start">
-            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full h-[45px]">
-              <Image src="/assets/wifcon.png" width="175" height="50" />
+            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
+              <Image src="/assets/wifcon.png" width="175" height="50" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">
               Wifcon.com
@@ -80,8 +77,8 @@ const CustomizedSearch = () => {
           </div>
     
           <div className="flex flex-col items-center justify-start">
-            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full h-[45px]">
-              <Image src="/assets/armed.png" width="64" height="63" />
+            <div className="flex justify-center items-center mb-4 rounded-full bg-primary-100 dark:bg-primary-900 w-full sm:h-[45px]">
+              <Image src="/assets/armed.png" width="64" height="63" alt="Img" />
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">ABSCA.Mil</h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
@@ -91,7 +88,7 @@ const CustomizedSearch = () => {
         </div>
         <a
           href="#"
-          className="text-[#219EBC] font-semibold text-center block underline"
+          className="text-[#219EBC] font-semibold text-center block underline hover:no-underline"
         >
           AND MANY MORE!
         </a>
