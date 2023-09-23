@@ -50,7 +50,7 @@ const CustomizedSearch = () => {
               GAO.Gov
             </h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
-             The Government Accountability Office (GAO) is known as "the investigative arm of Congress" and "the congressional watchdog."
+             The Government Accountability Office (GAO) is known as &quot;the investigative arm of Congress&quot; and &quot;the congressional watchdog.&quot;
             </p>
           </div>
   
@@ -82,7 +82,7 @@ const CustomizedSearch = () => {
             </div>
             <h3 className="mb-2 text-xl font-bold text-center">ABSCA.Mil</h3>
             <p className="text-gray-500 dark:text-gray-400 text-center">
-              The Armed Services Board of Contract Appeals (ASBCA) is a court that decides appeals from government contracting officers' final decisions.
+              The Armed Services Board of Contract Appeals (ASBCA) is a court that decides appeals from government contracting officers&apos; final decisions.
             </p>
           </div>
         </div>
