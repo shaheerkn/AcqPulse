@@ -79,7 +79,7 @@ export default function Pricing() {
               key={tier.id}
               className={classNames(
                 "relative shadow-md flex flex-col justify-between rounded-2xl bg-white p-8 ring-1 ring-gray-200 xl:p-10"
-              )}
+              )} data-aos="flip-up"
             > 
               {tier.mostPopular && (
                 <motion.div initial={{ scale: 0 }} viewport={{ once: true }} whileInView={{ scale: 1 }} transition={{ delay: 1 }} className="text-[#8ECAE6] text-center text-sm font-semibold sm:absolute -top-8 -right-4 pl-6">

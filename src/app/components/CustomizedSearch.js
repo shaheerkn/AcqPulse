@@ -7,7 +7,7 @@ const CustomizedSearch = () => {
       <div className="py-12 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="bg-slate-100 text-[#219EBC] text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-2xl border border-slate-200">
+            <span data-aos="fade-up" className="bg-slate-100 text-[#219EBC] text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-2xl border border-slate-200">
               Integrations
             </span>
             <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">

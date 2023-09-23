@@ -20,7 +20,7 @@ const Footer = () => {
     <footer className='bg-primary'>
       <div className="relative isolate overflow-hidden">
         <div className="px-6 pt-24 sm:px-6 sm:pt-32 lg:px-8 pb-16">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-3xl text-center" data-aos="fade-right">
             <h2 className="text-3xl font-bold tracking-tight text-white font-poppins">
               Experience the Future of FAR Compliance Today
             </h2>

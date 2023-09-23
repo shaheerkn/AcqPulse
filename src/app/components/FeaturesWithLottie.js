@@ -45,12 +45,11 @@ const FeaturesWithLottie = () => {
           {features.map((feature) => {
             return (
               <div className='flex gap-4 items-start' key={feature.id}>
-                <div className='bg-[#F4EBFF] border-4 xl:border-8 border-[#F9F5FF] text-base text-secondary flex items-center justify-center rounded-[50%] w-8 h-8 xl:w-14 xl:h-14'>
+                <div data-aos="zoom-out-up" className='bg-[#F4EBFF] border-4 xl:border-8 border-[#F9F5FF] text-base text-secondary flex items-center justify-center rounded-[50%] w-8 h-8 xl:w-14 xl:h-14'>
                   <p className='leading-0'>{ feature.id }</p>
                 </div>
-                <div className=' max-w-[300px] sm:max-w-lg'>
+                <div className='max-w-[300px] sm:max-w-lg'>
                   <h5 className='text-base font-semibold text-[#101828] mt-2'>{ feature.title }</h5>
-
                   <div className='text-[#475467] font-normal font-poppins mt-2'>
                     {feature.featureDescription.includes('<li>') ? (
                       <ul className="list-disc pl-4" dangerouslySetInnerHTML={{ __html: feature.featureDescription }} />
@@ -58,7 +57,6 @@ const FeaturesWithLottie = () => {
                       <p dangerouslySetInnerHTML={{ __html: feature.featureDescription }} />
                     )}
                   </div>
-
                   <a href={feature.featureURl} className='text-secondary font-semibold mt-5 inline-block flex gap-1 group'>Learn more 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 group-hover:translate-x-3 transition-transform"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" /></svg>
                   </a>

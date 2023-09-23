@@ -1,9 +1,11 @@
 "use client";
 
-import React from "react";
+import React, {useEffect} from "react";
 import { Disclosure, Transition } from '@headlessui/react'
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/24/outline'
 import GetInTouch from "./GetInTouch";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const faqs = [
   {
@@ -50,6 +52,9 @@ const faqs = [
 ]
 
 export default function Faqs() {
+   useEffect(() => {
+      AOS.init();
+    }, [])
   return (
     <section className="bg-primary font-poppins py-12 sm:py-32 lg:py-24" id="faqs">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 ">
@@ -59,7 +64,7 @@ export default function Faqs() {
             <p className='text-base sm:text-xl font-normal mt-3 sm:mt-5'>Everything you need to know about the product and billing.</p>
           </div>
 
-          <dl className="mt-16 space-y-6 divide-y divide-white/10">
+          <dl className="mt-16 space-y-6 divide-y divide-white/10" data-aos="fade-up">
             {faqs.map((faq) => (
               <Disclosure as="div" key={faq.question} className="pt-6">
                 {({ open }) => (
